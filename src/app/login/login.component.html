@@ -1,0 +1,16 @@
+<form>
+  <div class="form-group">
+    <label for="usernameInput">Felhasználónév</label>
+    <input type="text" class="form-control"
+           name="usernameInput" id="usernameInput"
+           placeholder="Enter title" [(ngModel)]="loginData.username">
+  </div>
+  <div class="form-group">
+    <label for="passwordInput">Jelszó</label>
+    <input type="password" class="form-control"
+           name="passwordInput" id="passwordInput"
+           placeholder="Enter title" [(ngModel)]="loginData.password">
+  </div>
+
+  <button class="btn btn-success" (click)="logIn()">Belépés</button>
+</form>

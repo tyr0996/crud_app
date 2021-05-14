@@ -1,0 +1,40 @@
+<button class="btn" (click)="generateRandom()">Random</button>
+
+<form>
+
+  <div class="form-group">
+    <label for="titleinput">Title</label>
+    <input type="text" class="form-control"
+           name="titleinput" id="titleinput"
+           placeholder="Enter title" [(ngModel)]="nameData.title">
+  </div>
+  <div class="form-group">
+    <label for="firstnameinput">First Name</label>
+    <input type="text" class="form-control"
+           name="firstnameinput" id="firstnameinput"
+           placeholder="Enter first name" [(ngModel)]="nameData.first">
+  </div>
+  <div class="form-group">
+    <label for="lastnameinput">Last Name</label>
+    <input type="text" class="form-control"
+           name="lastnameinput" id="lastnameinput"
+           placeholder="Enter last name" [(ngModel)]="nameData.last">
+  </div>
+
+  <div class="form-group">
+    <label for="usernameinput">User Name</label>
+    <input type="text" class="form-control"
+           name="usernameinput" id="usernameinput"
+           placeholder="Username" [(ngModel)]="loginData.username">
+  </div>
+  <div class="form-group">
+    <label for="passWord">Password</label>
+    <input type="password" class="form-control"
+           name="passWord" id="passWord"
+           placeholder="Password" [(ngModel)]="loginData.password">
+  </div>
+
+  <button type="submit" class="btn btn-success" (click)="save()">Mentés</button>
+</form>
+
+
